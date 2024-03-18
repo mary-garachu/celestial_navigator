@@ -1,6 +1,6 @@
 import React from 'react';
-import WorldLogo from '../Assets/logos/WorldLogo.jpg'
-import './Header.css';
+import WorldLogo from '../../Assets/logos/WorldLogo.jpg'
+import './index.css';
 
 
 const Header = () => {
