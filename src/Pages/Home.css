@@ -1,0 +1,48 @@
+/* Home.css */
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; /* Center cards within the container */
+    gap: 20px; /* Spacing between cards */
+    padding: 20px; /* Padding around the entire cards container */
+  }
+  
+  .card {
+    flex: 0 1 300px; /* Flex item to not grow but can shrink, with a base width of 300px */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Align card content centrally */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for depth */
+    border-radius: 10px; /* Optional: Rounded corners for the cards */
+    overflow: hidden; /* Ensures the content does not overflow the card */
+    background: #fff; /* Card background color */
+    padding: 15px; /* Padding inside the card */
+  }
+  
+  .card img {
+    width: 100%; /* Make image fill the card width */
+    height: auto; /* Keep image aspect ratio */
+    border-bottom: 1px solid #eee; /* Optional: add a separator between image and text */
+  }
+  
+  .card h1, /* Assuming you have a heading element for the title */
+  .card p { /* Styling for the paragraph */
+    margin: 10px 0;
+  }
+  
+  .card button {
+    cursor: pointer;
+    padding: 10px 20px;
+    margin-top: 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    transition: background-color 0.3s ease;
+  }
+  
+  .card button:hover {
+    background-color: #0056b3;
+  }
+  
