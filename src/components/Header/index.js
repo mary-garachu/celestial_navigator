@@ -1,9 +1,10 @@
 import React from 'react';
-import WorldLogo from '../../Assets/logos/WorldLogo.jpg'
+import { toAbsoluteUrl } from '../../_helpers/utils';
 import './index.css';
 
 
 const Header = () => {
+  const WorldLogo = toAbsoluteUrl('/Assets/logos/WorldLogo.jpg');
   return (
     <header className='header'>
       <div className="logo">
