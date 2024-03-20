@@ -1,0 +1,16 @@
+/* Card.css - Add these styles to your existing CSS */
+.read-more-btn {
+    padding: 10px 20px;
+    margin-top: 15px;
+    background-color: #007bff; /* Example button color */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .read-more-btn:hover {
+    background-color: #0056b3; /* Darken button on hover */
+  }
+  

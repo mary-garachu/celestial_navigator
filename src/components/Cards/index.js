@@ -1,12 +1,16 @@
-// Card.js
-import React from 'react';
+import React, { useState } from 'react';
 import './index.css';
 import { toAbsoluteUrl } from '../../_helpers/utils';
+import Modal from '../Modal';
 
-const Card = ({ title, description, imageUrl }) => {
-  // Placeholder for "Read More" button action
-  const onReadMore = () => {
-    alert("Read more clicked!");
+const Card = ({ title, description, imageUrl, moreInfo }) => {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  // const onReadMore = () => {
+  //   alert("Read more clicked!");
+  // };
+
+  const toggleModal = () => {
+    setIsModalOpen(!isModalOpen);
   };
 
   return (
@@ -15,7 +19,10 @@ const Card = ({ title, description, imageUrl }) => {
       <div className="card-content">
         <h3 className='card-title'> {title}</h3>
         <p className="card-description">{description}</p>
-        <button onClick={onReadMore} className="read-more-btn">Read More</button>
+        <button onClick= {toggleModal} className="read-more-btn">Read More</button>
+        {isModalOpen && <Modal onClose={toggleModal} title={title}>
+        <p>{moreInfo}</p>
+      </Modal>}
       </div>
     </div>
   );
