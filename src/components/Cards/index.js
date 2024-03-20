@@ -5,9 +5,6 @@ import Modal from '../Modal';
 
 const Card = ({ title, description, imageUrl, moreInfo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
-  // const onReadMore = () => {
-  //   alert("Read more clicked!");
-  // };
 
   const toggleModal = () => {
     setIsModalOpen(!isModalOpen);
