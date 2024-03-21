@@ -1,0 +1,16 @@
+/* Hero.css */
+.hero {
+  width: 100%;
+  height: 70vh; /* Adjust the height as desired */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center; /* Vertically center content */
+  justify-content: center; /* Horizontally center content */
+}
+
+.hero img {
+  max-height: 70%; /* Adjust the maximum height as desired */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: cover;
+}

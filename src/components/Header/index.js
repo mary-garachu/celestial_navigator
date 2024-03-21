@@ -4,7 +4,7 @@ import './index.css';
 
 
 const Header = () => {
-  const WorldLogo = toAbsoluteUrl('/Assets/logos/WorldLogo.jpg');
+  const WorldLogo = toAbsoluteUrl('/Assets/logos/WorldLogo.png');
   return (
     <header className='header'>
       <div className="logo">
