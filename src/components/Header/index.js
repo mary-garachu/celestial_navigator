@@ -34,7 +34,7 @@ const Header = () => {
           id="search-form"
           className="search-input"
           onChange={handleSearchChange}
-          placeholder="Search here"
+          placeholder="Search..."
         />
       </div>
     </header>
