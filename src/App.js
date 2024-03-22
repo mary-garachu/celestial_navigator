@@ -1,13 +1,15 @@
 import Home from './Pages/Home';
 import './App.css';
-import Header from './components/Header';
-import Hero from './components/Hero'; 
+import Header from './components/Header'
+import { toAbsoluteUrl } from './_helpers/utils';
+import Hero from './components/Hero'
 
 function App() {
+  const imageUrl = toAbsoluteUrl('/Assets/images/universe4.jpg');
   return (
     <div className="App">
       <Header/>
-      <Hero/>
+      <Hero imageUrl={imageUrl} />
       <Home/>
     </div>
   );
