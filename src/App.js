@@ -1,17 +1,26 @@
-import Home from './Pages/Home';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
-import Header from './components/Header'
 import { toAbsoluteUrl } from './_helpers/utils';
-import Hero from './components/Hero'
+import Home from './Pages/Home/index';
+import Contact from './Pages/Contact/index';
+import LandingPage from './Pages/Landing/index';
+import About from './Pages/About/index';
+
 
 function App() {
-  const imageUrl = toAbsoluteUrl('/Assets/images/universe4.jpg');
+  // const imageUrl = toAbsoluteUrl('/Assets/images/universe4.jpg');
   return (
-    <div className="App">
-      <Header/>
-      <Hero imageUrl={imageUrl} />
-      <Home/>
-    </div>
+    <Router>
+      <Routes>
+        {/* Define routes for each page */}
+        <Route path="/" element={<LandingPage />} />
+        <Route path="/home" element={<Home />} />
+        <Route path="/about" element={<About />} />
+        <Route path="/contact" element={<Contact />} />
+      </Routes>
+    </Router>
+
   );
 }
 

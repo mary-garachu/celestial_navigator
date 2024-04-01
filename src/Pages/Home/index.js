@@ -1,16 +1,15 @@
 // Home.js
 import React, { useState, useEffect } from 'react';
-// import Header from '../components/Header';
-import Card from '../components/Cards';
-import './Home.css';
-import mockData from '../Mock';
+import Card from '../../components/Cards/index'
+import './index.css'
+import mockData from '../../Mock';// Import the mock data
 
 const Home = () => {
   const [cards, setCards] = useState([]);
 
   useEffect(() => {
-      setCards(mockData);
-
+    // Set mock data
+    setCards(mockData);
   }, []);
 
   return (

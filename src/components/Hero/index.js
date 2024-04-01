@@ -39,7 +39,7 @@ const Hero = () => {
       <div className="astronomy-text" onClick={toggleDescription}>
         <h1 className="big-text">Astronomy image<br/>of the day</h1>
         <button className="learn-more-btn" onClick={toggleDescription}>
-          Learn More
+          Read More
         </button>
       </div>
       {showDescription && (
@@ -50,12 +50,7 @@ const Hero = () => {
           </div>
         </div>
       )}
-      <nav className="nav-bar">
-        <a href="#">Home</a>
-        <a href="#">Moon</a>
-        <a href="#">Stars</a>
-        <a href="#">Planets</a>
-      </nav>
+      
     </section>
   );
 };

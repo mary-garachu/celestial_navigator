@@ -1,7 +1,6 @@
+// Card.js
 import React, { useState } from 'react';
-import './index.css';
-import { toAbsoluteUrl } from '../../_helpers/utils';
-import Modal from '../Modal';
+import './index.css' // Import CSS for the Card component
 
 const Card = ({ title, description, imageUrl, moreInfo }) => {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -12,14 +11,23 @@ const Card = ({ title, description, imageUrl, moreInfo }) => {
 
   return (
     <div className="card">
-      <img src={ toAbsoluteUrl( imageUrl ) }  alt={title} className="card-image" />
+      <img src={imageUrl} alt={title} className="card-image" />
       <div className="card-content">
-        <h3 className='card-title'> {title}</h3>
+        <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
-        <button onClick= {toggleModal} className="read-more-btn">Read More</button>
-        {isModalOpen && <Modal onClose={toggleModal} title={title}>
-        <p>{moreInfo}</p>
-      </Modal>}
+        <button onClick={toggleModal} className="read-more-btn">
+          Read More
+        </button>
+        {isModalOpen && (
+          <div className="modal">
+            <div className="modal-content">
+              <span className="close" onClick={toggleModal}>
+                &times;
+              </span>
+              <p>{moreInfo}</p>
+            </div>
+          </div>
+        )}
       </div>
     </div>
   );

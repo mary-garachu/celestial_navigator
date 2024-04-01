@@ -1,7 +1,7 @@
 
 .header {
   display: flex;
-  background-color: black;
+  background-color: #ffffff;
   justify-content: space-between;
   padding: 20px;
   align-items: center;
@@ -27,23 +27,21 @@
 }
 
 .logo {
-  display: inline;
-  justify-content: center; 
+  display: flex;
+  align-items: center;
+  justify-content: space-between; 
+  
 }
 
 .logo img {
-  width: 100px;
+  width: 80px;
   height: auto;
   justify-content: center;
 }
 
-h1 {
-  margin-left: 0;
-}
-
-h1 a{
-  text-decoration: none;
-  color: #fff;
+.logo-content {
+  font-size: 25px;
+  font-weight: bold;
 }
 
 .input-box {
