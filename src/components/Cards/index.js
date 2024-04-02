@@ -1,33 +1,16 @@
-// Card.js
-import React, { useState } from 'react';
-import './index.css' // Import CSS for the Card component
+import React from 'react';
+import { Link } from 'react-router-dom'; // Import Link from React Router
+import { toAbsoluteUrl } from '../../_helpers/utils';
+import './index.css'; // Import CSS file for styling
 
-const Card = ({ title, description, imageUrl, moreInfo }) => {
-  const [isModalOpen, setIsModalOpen] = useState(false);
-
-  const toggleModal = () => {
-    setIsModalOpen(!isModalOpen);
-  };
-
+const Card = ({ title, description, imageUrl }) => {
   return (
     <div className="card">
-      <img src={imageUrl} alt={title} className="card-image" />
+      <img src={ toAbsoluteUrl( imageUrl ) }  alt={title} className="card-image" />
       <div className="card-content">
         <h3 className="card-title">{title}</h3>
         <p className="card-description">{description}</p>
-        <button onClick={toggleModal} className="read-more-btn">
-          Read More
-        </button>
-        {isModalOpen && (
-          <div className="modal">
-            <div className="modal-content">
-              <span className="close" onClick={toggleModal}>
-                &times;
-              </span>
-              <p>{moreInfo}</p>
-            </div>
-          </div>
-        )}
+        <Link to="/about" className="read-more-btn">Read More</Link>
       </div>
     </div>
   );

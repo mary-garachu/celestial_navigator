@@ -1,71 +1,50 @@
-/* Card.css */
 .card {
-  width: 300px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  margin: 10px;
+  border-radius: 10px;
   overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  margin-bottom: 20px;
+  width: calc(30% - 20px); /* Calculate width for three cards per row with spacing */
+}
+
+.card:hover {
+  transform: translateY(-5px);
 }
 
 .card-image {
-  width: 100%;
-  height: 200px;
-  object-fit: cover;
+  width: 100%; /* Ensure the image fills the card container */
+  height: 250px; /* Increase the height of the image */
+  object-fit: cover; /* Maintain aspect ratio */
 }
 
 .card-content {
-  padding: 10px;
+  padding: 20px;
+  text-align: center;
 }
 
 .card-title {
-  margin: 0;
-}
-
-.card-description {
-  margin-top: 5px;
-}
-
-.read-more-btn {
-  background-color: #007bff;
-  color: #fff;
-  border: none;
-  padding: 5px 10px;
-  border-radius: 3px;
-  cursor: pointer;
-}
-
-/* Home.css (or wherever your modal CSS is) */
-.modal {
-  display: none;
-  position: fixed;
-  z-index: 1;
-  left: 0;
-  top: 0;
-  width: 100%; /* Full width */
-  height: 100%; /* Full height */
-  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
-  overflow: auto; /* Enable scrolling if content overflows */
-}
-
-.modal-content {
-  background-color: #fefefe;
-  margin: 10% auto; /* 10% from the top and centered horizontally */
-  padding: 20px;
-  border: 1px solid #888;
-  width: 40%; /* Width of modal content */
-  border-radius: 10px; /* Rounded corners */
-}
-
-.close {
-  color: #aaa;
-  float: right;
-  font-size: 28px;
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 20px;
   font-weight: bold;
 }
 
-.close:hover,
-.close:focus {
-  color: black;
+.card-description {
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.read-more-btn {
+  display: inline-block;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border-radius: 5px;
   text-decoration: none;
-  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.read-more-btn:hover {
+  background-color: #0056b3;
 }
