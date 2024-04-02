@@ -3,7 +3,7 @@ import { toAbsoluteUrl } from '../../_helpers/utils';
 import './index.css';
 
 const Header = () => {
-  const WorldLogo = toAbsoluteUrl('/Assets/logos/WorldLogo.jpg');
+  const WorldLogo = toAbsoluteUrl('/Assets/logos/WorldLogo.png');
   const [searchQuery, setSearchQuery] = useState(''); // State to hold the search query
 
   // Function to handle the search query change
@@ -23,10 +23,8 @@ const Header = () => {
       </div>
       <div className="logo">
         <img src={WorldLogo} alt="World Logo" />
+        <div className='logo-content'>Celestial Navigator</div>
       </div>
-      <h1>
-        <a href='index.js'>Celestial Navigator</a>
-      </h1>
       <div className="input-box">
         <input
           type="search"

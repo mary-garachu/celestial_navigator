@@ -1,9 +1,11 @@
+/* Hero js */
 import React, { useState, useEffect } from 'react';
 import './index.css';
 
 const Hero = () => {
   const [imageUrl, setImageUrl] = useState('');
-  const [error, setError] = useState(null);
+  const [imageDescription, setImageDescription] = useState('');
+  const [showDescription, setShowDescription] = useState(false);
 
   useEffect(() => {
     const apiUrl = 'https://api.nasa.gov/planetary/apod';
@@ -18,19 +20,37 @@ const Hero = () => {
       })
       .then(data => {
         setImageUrl(data.url);
+        setImageDescription(data.explanation);
       })
       .catch(error => {
         console.error('There was a problem with the fetch operation:', error);
-        setError(error.message);
       });
   }, []);
 
+  const toggleDescription = () => {
+    setShowDescription(!showDescription);
+  };
+
   return (
     <section className="hero" style={{ backgroundImage: `url(${imageUrl})` }}>
-      {error && <div>Error: {error}</div>}
       <div className="day-picture">
         {imageUrl && <img src={imageUrl} alt="NASA Picture of the Day" />}
       </div>
+      <div className="astronomy-text" onClick={toggleDescription}>
+        <h1 className="big-text">Astronomy image<br/>of the day</h1>
+        <button className="learn-more-btn" onClick={toggleDescription}>
+          Read More
+        </button>
+      </div>
+      {showDescription && (
+        <div className="modal">
+          <div className="modal-content">
+            <span className="close" onClick={toggleDescription}>&times;</span>
+            <p>{imageDescription}</p>
+          </div>
+        </div>
+      )}
+      
     </section>
   );
 };

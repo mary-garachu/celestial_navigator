@@ -1,0 +1,24 @@
+.home {
+  padding: 30px; /* Add some padding to the container */
+  margin: 50px;
+  font-family: 'Nunito', sans-serif;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap; /* Allow cards to wrap to the next line */
+  justify-content: space-between; /* Distribute space between cards */
+}
+
+@media (max-width: 992px) {
+  .card {
+    width: calc(50% - 20px); /* Calculate width for two cards per row with spacing */
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    width: 100%; /* Set width to 100% for single card per row on smaller screens */
+  }
+}
+
