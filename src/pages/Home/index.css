@@ -11,6 +11,19 @@
   justify-content: space-between; /* Distribute space between cards */
 }
 
+.partner-container {
+    display: flex;
+    flex-wrap: wrap; 
+
+}
+
+.about-partners {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
 @media (max-width: 992px) {
   .card {
     width: calc(50% - 20px); /* Calculate width for two cards per row with spacing */
