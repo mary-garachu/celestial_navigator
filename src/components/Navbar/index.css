@@ -3,8 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: #ffffff;
+    padding: 0 150px;
+    background-color: #fbf9f7;
     color: #000000;
     font-family: 'Nunito', sans-serif;
   }
@@ -30,6 +30,6 @@
     margin-left: 10px;
   }
   .navbar-right a:hover {
-    color: #007bff;
+    color: orangered;
   }
   

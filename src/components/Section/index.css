@@ -1,0 +1,30 @@
+/* index.css */
+
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; /* Occupy the full width */
+    padding: 20px;
+    background-color: #fff;
+  }
+  
+  .section-content {
+    text-align: center;
+    width: 100%; /* Each item occupies 30% of the screen */
+    margin: 0 10px 20px 10px; /* Adjust margin as needed for spacing */
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-description {
+    font-size: 24px;
+  }
+  
+  .section-image {
+    width: 50%; /* Ensure the image fills the card container */
+    height: 60px; /* Increase the height of the image */
+    object-fit: contain;/* Optional: to make the images appear as circles */
+  }

@@ -1,7 +1,8 @@
 .home {
-  padding: 30px; /* Add some padding to the container */
   margin: 50px;
   font-family: 'Nunito', sans-serif;
+  background-color:  #fbf9f7;
+  padding: 0 150px;
 }
 
 .card-container {
@@ -20,5 +21,16 @@
   .card {
     width: 100%; /* Set width to 100% for single card per row on smaller screens */
   }
+}
+
+.about {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24;
+  font-weight: bold;
+}
+
+.section-home-title{
+  text-align: center;
 }
 

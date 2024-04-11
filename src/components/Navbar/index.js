@@ -5,7 +5,7 @@ import { toAbsoluteUrl } from '../../_helpers/utils';
 import './index.css';
 
 const Navbar = () => {
-    const WorldLogo = toAbsoluteUrl('/Assets/logos/WorldLogo.png');
+    const WorldLogo = toAbsoluteUrl('/Assets/logos/icon1.png');
   return (
     <nav className="navbar">
       <div className="navbar-left">
