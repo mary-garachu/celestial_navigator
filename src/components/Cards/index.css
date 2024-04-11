@@ -37,8 +37,7 @@
 
 .read-more-btn {
   display: inline-block;
-  background-color: orangered;
-  color: #fff;
+  color: #000000;
   padding: 10px 20px;
   border-radius: 5px;
   text-decoration: none;
@@ -46,6 +45,6 @@
 }
 
 .read-more-btn:hover {
-  background-color: #ffffff;
+  background-color: orangered;
   color: #000000;
 }

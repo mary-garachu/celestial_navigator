@@ -1,62 +1,68 @@
-/* LandingPage.css */
+/* index.css */
 .landing-page {
-    font-family: Arial, sans-serif;
-  }
-  
-  .hero {
-    background-color: #2196F3;
-    color: white;
-    padding: 100px 0;
-    text-align: center;
-  }
-  
-  .hero-content {
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  .hero h1 {
-    font-size: 48px;
-    margin-bottom: 20px;
-  }
-  
-  .hero p {
-    font-size: 24px;
-    margin-bottom: 40px;
-  }
-  
-  .cta-button {
-    background-color: #FFC107;
-    color: #333;
-    padding: 15px 30px;
-    font-size: 18px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-  }
-  
-  .cta-button:hover {
-    background-color: #FFD54F;
-  }
-  
-  .features {
-    display: flex;
-    justify-content: center;
-    padding: 50px 0;
-  }
-  
-  .feature {
-    flex: 1;
-    text-align: center;
-    padding: 0 20px;
-  }
-  
-  .feature h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-  }
-  
-  .feature p {
-    font-size: 18px;
-  }  
+  font-family: Arial, sans-serif; /* Set font family for the entire page */
+}
+
+.hero {
+  position: relative; /* Ensure proper positioning of image and content */
+  height: 100vh; /* Set hero section height to fill the viewport */
+  background-color: #0a192f; /* Set background color for the hero section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-image {
+  width: 200px; /* Set width of hero image */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 20px; /* Add some spacing between image and content */
+}
+
+.hero-content {
+  color: #fff; /* Set text color to contrast with background */
+  text-align: center;
+}
+
+.hero-content h1 {
+  font-size: 3em; /* Set font size for heading */
+  margin-bottom: 20px; /* Add some spacing below heading */
+}
+
+.hero-content p {
+  font-size: 1.2em; /* Set font size for paragraph */
+  margin-bottom: 20px; /* Add some spacing below paragraph */
+}
+
+.cta-button {
+  display: inline-block; /* Ensure button is displayed as block element */
+  padding: 10px 20px; /* Add padding to button */
+  background-color: #47d1d1; /* Set button background color */
+  color: #fff; /* Set button text color */
+  text-decoration: none; /* Remove default underline */
+  border-radius: 5px; /* Add some border radius to button */
+  transition: background-color 0.3s ease; /* Add transition effect for hover */
+}
+
+.cta-button:hover {
+  background-color: #2a8282; /* Change button background color on hover */
+}
+
+.features {
+  display: flex; /* Set feature sections to display flex */
+  justify-content: center; /* Center feature sections horizontally */
+  padding: 50px 0; /* Add padding above and below feature sections */
+}
+
+.feature {
+  text-align: center;
+  margin: 0 20px; /* Add some spacing between feature sections */
+}
+
+.feature h2 {
+  font-size: 2em; /* Set font size for feature headings */
+  margin-bottom: 10px; /* Add some spacing below feature headings */
+}
+
+.feature p {
+  font-size: 1.2em; /* Set font size for feature paragraphs */
+}
