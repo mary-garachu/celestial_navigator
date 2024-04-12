@@ -1,0 +1,29 @@
+.section-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%; 
+    padding: 20px;
+    background-color: #fff;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .section-content {
+    text-align: center;
+    width: 100%; 
+    margin: 0 10px 20px 10px; 
+  }
+
+  .section-title {
+    font-size: 30px;
+  }
+
+  .section-description {
+    font-size: 24px;
+  }
+  
+  .section-image {
+    width: 50%; 
+    height: 60px;
+    object-fit: contain;
+  }

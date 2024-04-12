@@ -1,12 +1,14 @@
-// LandingPage.js
 import React from 'react';
 import { Link } from 'react-router-dom';
-import './index.css'
+import './index.css';
+import { toAbsoluteUrl } from '../../_helpers/utils';
 
 const LandingPage = () => {
+  const heroImage = toAbsoluteUrl('/Assets/logos/icon6.png');
   return (
     <div className="landing-page">
       <section className="hero">
+        <img src={heroImage} alt="Hero" className="hero-image" />
         <div className="hero-content">
           <h1>Welcome to Celestial Navigator</h1>
           <p>Your guide to exploring the cosmos</p>

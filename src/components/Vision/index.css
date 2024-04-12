@@ -1,0 +1,26 @@
+.vision {
+    background-color: #fff;
+    margin-bottom: 50px;
+    font-family: 'Nunito', sans-serif;
+    width: 100%;
+    padding: 0;
+}
+
+.vision-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 100%;
+}
+
+.vision-content h2 {
+    margin-right: 80px;
+    font-size: 75px;
+    font-family: Ayerposter web, sans-serif;
+    color: orangered;
+}
+
+.vision-content p {
+    font-size: 20px;
+}
+  

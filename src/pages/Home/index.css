@@ -1,13 +1,27 @@
 .home {
-  padding: 30px; /* Add some padding to the container */
   margin: 50px;
   font-family: 'Nunito', sans-serif;
+  background-color:  #fbf9f7;
+  padding: 0 150px;
 }
 
 .card-container {
   display: flex;
   flex-wrap: wrap; /* Allow cards to wrap to the next line */
   justify-content: space-between; /* Distribute space between cards */
+}
+
+.partner-container {
+    display: flex;
+    flex-wrap: wrap; 
+
+}
+
+.about-partners {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 @media (max-width: 992px) {
@@ -20,5 +34,16 @@
   .card {
     width: 100%; /* Set width to 100% for single card per row on smaller screens */
   }
+}
+
+.about {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 24;
+  font-weight: bold;
+}
+
+.section-home-title{
+  text-align: center;
 }
 

@@ -1,0 +1,21 @@
+.footer {
+    background-color: #fbf9f7;
+    text-align: center;
+    padding-top: 50px;
+    font-family: 'Nunito', sans-serif;
+  }
+  
+  .footer-icons {
+    font-size: 24px;
+  }
+  
+  .footer-icons a {
+    color: orangered;
+    margin: 0 10px;
+    text-decoration: none;
+  }
+  
+  .footer-icons a:hover {
+    color: #fff;
+  }
+  
