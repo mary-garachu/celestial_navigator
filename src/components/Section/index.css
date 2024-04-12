@@ -1,18 +1,17 @@
-/* index.css */
-
 .section-container {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    width: 100%; /* Occupy the full width */
+    width: 100%; 
     padding: 20px;
     background-color: #fff;
+    font-family: 'Nunito', sans-serif;
   }
   
   .section-content {
     text-align: center;
-    width: 100%; /* Each item occupies 30% of the screen */
-    margin: 0 10px 20px 10px; /* Adjust margin as needed for spacing */
+    width: 100%; 
+    margin: 0 10px 20px 10px; 
   }
 
   .section-title {
@@ -24,7 +23,7 @@
   }
   
   .section-image {
-    width: 50%; /* Ensure the image fills the card container */
-    height: 60px; /* Increase the height of the image */
-    object-fit: contain;/* Optional: to make the images appear as circles */
+    width: 50%; 
+    height: 60px;
+    object-fit: contain;
   }
