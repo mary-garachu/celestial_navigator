@@ -13,9 +13,10 @@
     color: orangered;
     margin: 0 10px;
     text-decoration: none;
+    font-size: 20px;
   }
   
   .footer-icons a:hover {
-    color: #fff;
+    color: orangered;
   }
   

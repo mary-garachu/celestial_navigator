@@ -19,15 +19,22 @@
     margin-right: 10px;
   }
   
+  .navbar-left a {
+    text-decoration: none;
+    color: #000000;
+  }
+
   .navbar-left h1 {
-    font-size: 24px;
+    font-size: 26px;
     margin: 0;
+    color: #000000;
   }
   
   .navbar-right a {
     color: #000000;
     text-decoration: none;
     margin-left: 10px;
+    font-size: 18px;
   }
   .navbar-right a:hover {
     color: orangered;

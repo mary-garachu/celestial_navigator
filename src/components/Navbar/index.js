@@ -9,12 +9,13 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-left">
-        <img src={WorldLogo} alt="World Logo" />
-        <h1> Celestial Navigator </h1>
+        <img src={WorldLogo} alt="World Logo" /> 
+        <Link to="/">
+          <h1> Celestial Navigator </h1>
+        </Link>
       </div>
       <div className="navbar-right">
-        <Link to="/">LandingPage</Link>
-        <Link to="/home">Home</Link>
+        <Link to="/home">App</Link>
         <Link to="/about">About</Link>
         <Link to="/contact">Contact</Link>
       </div>
