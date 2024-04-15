@@ -39,6 +39,7 @@
   .member-info h3,
   .member-info p {
     margin: 0; 
+    font-size: 20px;
   }
   
   .member:hover .member-image {
