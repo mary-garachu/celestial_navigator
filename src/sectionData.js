@@ -1,24 +1,21 @@
 const sectionData = [
     {
       id: 1,
-      title: "Moon",
-      description: "We write pre-seed, seed, and Series A checks to founders building category-defining platforms. We go as early as idea-stage.buddy.",
+      title: "Milky Way Galaxy",
+      description: "Our home galaxy is special for its immense size and complexity. Its spiral arms, like the Orion Arm where our solar system resides, provide a captivating tapestry of stellar formations and cosmic phenomena.",
       imageUrl: '/Assets/logos/icon2.png',
-      moreInfo: "By doing this, each Card component will receive the corresponding moreInfo value from your mock data. When the 'Read More' button is clicked, the Modal component will be opened, displaying the additional information for the clicked item",
     },
     {
       id: 2,
-      title: "Stars",
-      description: "We write pre-seed, seed, and Series A checks to founders building category-defining platforms. We go as early as idea-stage.buddy.",
+      title: "Earth's Biosphere",
+      description: "Earth stands out for its remarkable biosphere, teeming with diverse life forms, ecosystems, and environments. This biodiversity sustains intricate food webs, regulates climate, and offers unique habitats for countless species, making Earth a truly extraordinary oasis of life in the cosmos.",
       imageUrl: '/Assets/logos/icon3.png' ,
-      moreInfo: "Twinkling dots of light in the vast velvet expanse, each with its own story and possibly alien admirers.",
     },
     {
       id: 3,
-      title: "Comet",
-      description: "We write pre-seed, seed, and Series A checks to founders building category-defining platforms. We go as early as idea-stage.buddy.",
+      title: "Gravity",
+      description: "Gravity is another special aspect of Earth that sets it apart within our solar system. Earth's gravitational force is crucial for holding our atmosphere in place, maintaining stable orbits for satellites and the Moon, and providing the conditions necessary for life to evolve and thrive.",
       imageUrl: '/Assets/logos/icon4.png',
-      moreInfo: "Streaking through the cosmos, bringing both awe and occasional doom since time immemorial.",
     },
   ];
   export default sectionData;
