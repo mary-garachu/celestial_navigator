@@ -9,7 +9,6 @@ import Vision from '../../components/Vision';
 import mock from '../../data';
 import sectionData from '../../sectionData';
 import Section from '../../components/Section';
-import Partner from '../../components/Partners';
 import partnerData from '../../partners';
 import Footer from '../../components/Footer';
 
@@ -55,7 +54,7 @@ const Home = () => {
         ))}
       </div>
       <ImageGrid />
-      
+      {/*
       <h1 className='about-partners'> Members </h1>
       <div className="partner-container">
         {partners.map(partner => (
@@ -67,7 +66,7 @@ const Home = () => {
           />
         ))}
       </div>
-
+      */}
       <Footer/>
     </div>
     
