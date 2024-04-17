@@ -9,19 +9,16 @@ import Vision from '../../components/Vision';
 import mock from '../../data';
 import sectionData from '../../sectionData';
 import Section from '../../components/Section';
-import partnerData from '../../partners';
 import Footer from '../../components/Footer';
 
 const Home = () => {
   const { vision } = mock; 
   const [cards, setCards] = useState([]);
   const [ sections, setSections] = useState([]);
-  const [ partners, setPartners] = useState([]);
 
   useEffect(() => {
     setCards(mockData);
     setSections(sectionData);
-    setPartners(partnerData);
   }, []);
 
   return (
@@ -54,19 +51,6 @@ const Home = () => {
         ))}
       </div>
       <ImageGrid />
-      {/*
-      <h1 className='about-partners'> Members </h1>
-      <div className="partner-container">
-        {partners.map(partner => (
-          <Partner
-            key={partner.id}
-            title={partner.title}
-            description={partner.description}
-            imageUrl={partner.imageUrl}
-          />
-        ))}
-      </div>
-      */}
       <Footer/>
     </div>
     
