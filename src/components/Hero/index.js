@@ -29,7 +29,11 @@ const Hero = () => {
     <section className="hero" style={{ backgroundImage: `url(${imageUrl})` }}>
       {error && <div>Error: {error}</div>}
       <div className="day-picture">
-        {imageUrl && <img src={imageUrl} alt="NASA Picture of the Day" />}
+        {
+            imageUrl && 
+            // eslint-disable-next-line            
+            <img src={imageUrl} alt="NASA Picture of the Day" /> 
+        }
       </div>
     </section>
   );
