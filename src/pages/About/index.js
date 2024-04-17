@@ -5,7 +5,6 @@ import './index.css';
 
 const About = () => {
   return (
-<<<<<<< HEAD
     <div className="about-container">
     <Layout/>
     <h1 className="about-title">Discovery: <i>Celestial</i> Insights</h1>
@@ -26,11 +25,6 @@ const About = () => {
       ))}
     </div>
   </div>
-=======
-    <div>
-    <Layout/>
-    </div>
->>>>>>> 8b834f3b300dd7db5ee25eda6a3265fe7d81a92f
   )
 }
 
